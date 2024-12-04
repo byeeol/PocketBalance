@@ -1,0 +1,477 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+		background-image: url('wifi-characters-laptop-with-copy-space.jpg'); /* Cambia 'fondo.jpg' por el nombre de tu archivo */
+		background-size: cover; /* Asegura que la imagen cubra toda la página */
+		background-repeat: no-repeat; /* Evita que la imagen se repita */
+		background-position: center; /* Centra la imagen */
+	
+}
+
+/* Estilos para la barra de navegación */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Quitar subrayado */
+    color: #212529; /* Color del texto */
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 15px; /* Espacio entre los botones */
+}
+
+.navbar-buttons .btn {
+    text-decoration: none;
+    margin: 0;
+    padding: 5px 15px;
+    font-size: 1rem;
+}
+
+
+/* Banner */
+.banner {
+    background: rgba(12, 156, 12, 0.6); /* Fondo semitransparente */
+    backdrop-filter: blur(10px); /* Efecto borroso */
+    padding: 3
+	30px 20px; /* Espaciado interno */
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    margin: 20px auto; /* Centrar el banner (si es necesario) */
+    max-width: 90%; /* Limitar el ancho del banner */
+	color: white;
+}
+
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+.descrip{
+	font-size: 1.4rem; /* Tamaño del texto */
+    color: #003d07; /* Gris oscuro para el texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0 auto; /* Centrar el texto */
+    max-width: 950px; /* Limitar el ancho del párrafo */
+}
+
+.banner h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* Sección de bienvenida */
+.titulo {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.4rem;
+    color: #1b1b1b;
+}
+
+.boton1, .boton2 {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    background-color: #1d9549;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.boton1:hover, .boton2:hover {
+    background-color: #6fc646;
+}
+
+/*inicio sesion
+
+/* Estilos generales del formulario */
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+    background-color: url('wifi-characters-laptop-with-copy-space.jpg');
+}
+
+.form-container {
+    background: rgba(255, 223, 128, 0.9); /* Fondo con color amarillento */
+    backdrop-filter: blur(5px); /* Efecto borroso */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-container .recover-link {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-container .recover-link:hover {
+    text-decoration: underline;
+}
+
+.form-container .btn-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container .btn-login:hover {
+    background-color: #1e8449;
+}
+
+.form-container .register-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #34495e;
+}
+
+.form-container .register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-container .register-link a:hover {
+    text-decoration: underline;
+}
+
+.navbar-estatico {
+    background-color: #ffffff; /* Cambia este color al que prefieras */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Alinea elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efecto */
+}
+
+
+
+/* Eliminar subrayado y mantener el estilo al pasar el mouse */
+.navbar-brand:hover {
+    color: #212529; /* Mantener el color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/*registro
+
+/* Estilos generales del formulario */
+.register-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Evita superposición */
+    min-height: 100vh; /* Altura mínima de la ventana */
+    padding-top: 80px; /* Añade espacio para evitar la superposición con la barra */
+    background-color: url('wifi-characters-laptop-with-copy-space.jpg');
+}
+
+.form-container {
+    background: rgba(255, 223, 128, 0.9); /* Fondo con color amarillento */
+    backdrop-filter: blur(5px); /* Efecto borroso */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-container .btn-register {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container .btn-register:hover {
+    background-color: #1e8449;
+}
+
+.form-container .login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #34495e;
+}
+
+.form-container .login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-container .login-link a:hover {
+    text-decoration: underline;
+}
+
+/*recuperacion
+
+/* Estilos generales del formulario */
+.reset-password-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+    background-color: url('wifi-characters-laptop-with-copy-space.jpg');
+}
+
+.form-container {
+    background: rgba(255, 223, 128, 0.9); /* Fondo con color amarillento */
+    backdrop-filter: blur(5px); /* Efecto borroso */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-container .btn-reset {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container .btn-reset:hover {
+    background-color: #1e8449;
+}
+
+.form-container .login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #34495e;
+}
+
+.form-container .login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-container .login-link a:hover {
+    text-decoration: underline;
+}
+
+/*reseablecer contraseña
+
+/* Estilos generales del formulario */
+.new-password-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+    background-color: url('wifi-characters-laptop-with-copy-space.jpg');
+}
+
+.form-container {
+    background: rgba(255, 223, 128, 0.9); /* Fondo con color amarillento */
+    backdrop-filter: blur(5px); /* Efecto borroso */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-container .btn-save-password {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container .btn-save-password:hover {
+    background-color: #1e8449;
+}
+
+/* inicio */
+
+.transactions-summary {
+    flex: 2;
+    padding: 20px;
+}
+
+.transactions-summary h2 {
+    margin-bottom: 10px;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.transactions-table th {
+    background-color: #007bff;
+    color: white;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pocket Balance</title>
+	<link rel="icon" href="logo_transparent.png" type="image/png">
+
+</head>
+<body>
+    <nav class="navbar-estatico">
+        <a href="index.html" class="navbar-brand">
+			<img src="logo_transparent.png" alt="Logo" width="40" height="40">
+			<span>Pocket Balance</span>
+		</a>
+        <div class="navbar-buttons">
+           <!-- <a href="index.html" class="btn">Inicio</a>
+            <a href="Transferir.html" class="btn">Transferir</a>
+            <a href="EstadoDeCuenta.html" class="btn">Estado de cuenta</a> -->
+        </div>
+    </nav>
+</body>
+
+<section class="login-form">
+    <div class="form-container">
+        <h2>Inicia sesión</h2>
+        <form action="login.php" method="POST">
+            <!-- Campo de correo -->
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+            
+            <!-- Campo de contraseña -->
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+            
+            <!-- Enlace para recuperación -->
+            <a href="recuperacion.html" class="recover-link">¿Olvidó su contraseña?</a>
+            
+            <!-- Botón de iniciar sesión -->
+            <button type="submit" class="btn-login">Iniciar sesión</button>
+            
+            <!-- Enlaces a registro -->
+            <p class="register-link">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+        </form>
+    </div>
+</section>
+
+</html>

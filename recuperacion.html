@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pocket Balance</title><a href="index.html" ></a>
+	<link rel="icon" href="logo_transparent.png" type="image/png">
+
+</head>
+<body>
+  <nav class="navbar-estatico">
+    <a href="index.html" class="navbar-brand">
+  <img src="logo_transparent.png" alt="Logo" width="40" height="40">
+  <span>Pocket Balance</span>
+</a>
+        <div class="navbar-buttons">
+           <!-- <a href="index.html" class="btn">Inicio</a>
+            <a href="Transferir.html" class="btn">Transferir</a>
+            <a href="EstadoDeCuenta.html" class="btn">Estado de cuenta</a> -->
+        </div>
+    </nav>
+</body>
+
+<section class="reset-password-form">
+    <div class="form-container">
+        <h2>Restablecer Contraseña</h2>
+        <p>Ingresa tu correo electrónico para recibir un enlace de restablecimiento de contraseña.</p>
+        <form action="restablecer_contraseña.html" method="GET">
+            <!-- Campo de correo -->
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+            
+            <!-- Botón de enviar -->
+            <button type="submit" class="btn-reset">Enviar enlace</button>
+        </form>
+    </div>
+</section>
+
+<footer class="barra-inferior text-center">
+    <div class="container p-3">
+        © 2024 Todos los derechos reservados: Pocket Balance.
+    </div>
+</footer>
+
+    <script>
+        document.getElementById('recoveryForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            console.log("Código enviado al correo:", email);
+            window.location.href = 'verify_code.html'; // Redirige a la página de verificación
+        });
+    </script>
+</body>
+</html>
