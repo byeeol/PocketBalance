@@ -450,6 +450,14 @@ body {
 
 /* inicio */
 
+/* Contenido principal */
+.dashboard {
+    display: flex;
+    margin: 20px;
+    gap: 100px;
+}
+
+/* Resumen de transacciones */
 .transactions-summary {
     flex: 2;
     padding: 20px;
@@ -472,6 +480,191 @@ body {
 }
 
 .transactions-table th {
-    background-color: #007bff;
+    background-color: #7d7d7d;
     color: white;
+}
+
+/* Panel de acciones */
+.actions-panel {
+    flex: 1; /* Mantener el ancho más pequeño para el panel de acciones */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    background-color: rgba(124, 192, 124, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Efecto borroso */
+	margin: auto;
+}
+
+.btn-action {
+    padding: 8px;
+    background-color: #04723d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	width: 40%;
+	margin: 10px auto;
+
+}
+
+.btn-action:hover {
+    background-color: #197507;
+}
+
+/* Sección de alerta */
+.alert-section {
+    display: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Pie de página */
+/* Pie de página */
+.footer {
+    position: fixed; /* Fija el pie de página al final de la ventana */
+    bottom: 0; /* Alineado al borde inferior */
+    left: 0; /* Alineado al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #27ae60; /* Color de fondo */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); /* Sombra superior */
+    z-index: 100; /* Asegura que esté encima de otros elementos */
+}
+
+.budget-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: auto; /* Asegura el espaciado adecuado */
+    flex-wrap: wrap;
+}
+
+progress {
+    width: 100px;
+    height: 10px;
+    appearance: none; /* Personaliza el progreso */
+    background-color: #f0f0f0;
+}
+
+progress::-webkit-progress-value {
+    background-color: #dd8aef;
+}
+
+
+/*transaccion
+
+/* Contenedor del formulario */
+.transaction-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-form-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Estilos del formulario */
+.transaction-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transaction-form label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+.transaction-form input,
+.transaction-form select,
+.transaction-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.transaction-form textarea {
+    resize: none;
+}
+
+.transaction-form .btn-submit {
+    padding: 10px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transaction-form .btn-submit:hover {
+    background-color: #1e8449;
+}
+
+
+/*graficos */
+
+.data-visualization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de opciones */
+.options-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.options-container label {
+    font-weight: bold;
+    color: #34495e;
+    margin-right: 10px;
+}
+
+.options-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Contenedor del gráfico */
+.chart-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
 }

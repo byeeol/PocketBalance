@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pocket Balance</title>
+	<link rel="icon" href="logo_transparent.png" type="image/png">
+
+</head>
+<body>
+    <nav class="navbar-estatico">
+        <a href="inicio.html" class="navbar-brand">
+			<img src="logo_transparent.png" alt="Logo" width="40" height="40">
+			<span>Pocket Balance</span>
+		</a>
+        <div class="navbar-buttons">
+            <a href="transaccion.html" class="btn">Transacciones</a>
+            <a href="grafico.html" class="btn">Graficos</a>
+            <a href="index.html" class="btn">Cerrar Sesion</a> 
+        </div>
+    </nav>
+</body>
+
+<main class="data-visualization">
+    <div class="options-container">
+        <label for="options">Seleccionar opción:</label>
+        <select id="options">
+            <option value="todo">Todo</option>
+            <option value="categorias">Categorías</option>
+            <option value="etc">Etc...</option>
+        </select>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="pieChart"></canvas>
+    </div>
+
+</main>
+</body>
+
+<script>
+// Gráfico de ejemplo con Chart.js
+const ctx = document.getElementById('pieChart').getContext('2d');
+new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Comida', 'Transporte', 'Entretenimiento', 'Otros'],
+        datasets: [{
+            label: 'Gastos',
+            data: [30, 20, 25, 25],
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50']
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top'
+            }
+        }
+    }
+});
+</script>
+</html>
